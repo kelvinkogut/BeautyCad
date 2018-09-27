@@ -1,0 +1,21 @@
+﻿<Window x:Class="Inicial.ListarFuncionario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Inicial"
+        mc:Ignorable="d"
+        Title="Listar Funcionario" Height="339.474" Width="514.286">
+    <Grid>
+        <ListView Margin="5" Name="lvFunc">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nome" Width="130" DisplayMemberBinding="{Binding nome}"/>
+                    <GridViewColumn Header="Cargo" Width="130" DisplayMemberBinding="{Binding Funcao}"/>
+                    <GridViewColumn Header="Nascimento" Width="100" DisplayMemberBinding="{Binding dtaNascimento}"/>
+                    <GridViewColumn Header="Telefone" Width="100" DisplayMemberBinding="{Binding telefone}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
