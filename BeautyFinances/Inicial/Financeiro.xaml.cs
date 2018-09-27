@@ -22,13 +22,20 @@ namespace Inicial
         public Financeiro()
         {
             InitializeComponent();
-            using ( var db =  new ModelContext())
+            using (var db = new ModelContext())
             {
-                var lista = from f in db.ControleFins
-                            join fc in db.Servicos on f.IdServico equals fc.ID
-                            join cmd in db.Comandas on fc.ID equals cmd.idServico
-                            where cmd.valorCo != 0.00
-                            select cmd.valorCo ;
+                double valor = 0;
+                int qtde = 0;
+                foreach (var item in db.Horarios.Where(a => a.DataServico == DateTime.Today))
+                {
+                    foreach (var item2 in item.Servicos)
+                    {
+                        valor += item2.valorservico;
+                        qtde++;
+                    }
+                }
+                //var valorTotal = db.Horarios.Where(a => a.DataServico == DateTime.Today).Sum(a => a.Servicos.Sum(b => b.valorservico ));
+                //var quantidade = db.Horarios.Where(a => a.DataServico == DateTime.Today).Sum(a => a.Servicos.Count());
             }
         }
     }

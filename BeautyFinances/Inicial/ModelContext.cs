@@ -20,6 +20,16 @@ namespace Inicial
         public DbSet<Models.Funcionarios> Funcionarios { get; set; }
         public DbSet<Horarios> Horarios { get; set; }
         public DbSet<Servico> Servicos { get; set; }
-       
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Horarios>().HasMany<Servico>(s => s.Servicos).WithMany(c => c.ListHorarios).Map(cs =>
+            {
+                cs.MapLeftKey("Horarios_ID");
+                cs.MapRightKey("Servico_ID");
+                cs.ToTable("ServicoHorarios");
+            });
+        }
+
     }
 }

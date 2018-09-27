@@ -39,11 +39,13 @@ namespace Inicial
                         idFuncionario = ((Models.Funcionarios)cbFuncionario.SelectedValue).ID,
                         idCliente = ((Cliente)cbCliente.SelectedValue).ID,
                         IdServico = ((Servico)cbServico.SelectedValue).ID,
-                        Servicos = horarios.Servicos.ToList(),
+                        Servicos = sourceServico.ToList(),
                         DataServico = cldDia.SelectedDate.Value,
                         horarioinicio = tpHorario.Value.Value.Hour.ToString(),
                         tempo = (int)horarios.Servicos.Distinct().Sum(a => a.duracao)
                     });
+                    db.SaveChanges();
+                    MessageBox.Show("Serviços agendados com sucesso!");
                 }
             }
         }

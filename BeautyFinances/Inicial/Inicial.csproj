@@ -114,41 +114,9 @@
     <Compile Include="ListarFuncionario.xaml.cs">
       <DependentUpon>ListarFuncionario.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201809242108055_Inicial.cs" />
-    <Compile Include="Migrations\201809242108055_Inicial.Designer.cs">
-      <DependentUpon>201809242108055_Inicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809242112279_Outras Classes.cs" />
-    <Compile Include="Migrations\201809242112279_Outras Classes.Designer.cs">
-      <DependentUpon>201809242112279_Outras Classes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809242113078_ControleFin.cs" />
-    <Compile Include="Migrations\201809242113078_ControleFin.Designer.cs">
-      <DependentUpon>201809242113078_ControleFin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809242113360_ControleFin1.cs" />
-    <Compile Include="Migrations\201809242113360_ControleFin1.Designer.cs">
-      <DependentUpon>201809242113360_ControleFin1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809242114186_horarios.cs" />
-    <Compile Include="Migrations\201809242114186_horarios.Designer.cs">
-      <DependentUpon>201809242114186_horarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809242116291_Servicos.cs" />
-    <Compile Include="Migrations\201809242116291_Servicos.Designer.cs">
-      <DependentUpon>201809242116291_Servicos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809242118145_Campos Novos.cs" />
-    <Compile Include="Migrations\201809242118145_Campos Novos.Designer.cs">
-      <DependentUpon>201809242118145_Campos Novos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809270037425_Alteração da model agenda.cs" />
-    <Compile Include="Migrations\201809270037425_Alteração da model agenda.Designer.cs">
-      <DependentUpon>201809270037425_Alteração da model agenda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809270317000_Lista de servicos no agendamento.cs" />
-    <Compile Include="Migrations\201809270317000_Lista de servicos no agendamento.Designer.cs">
-      <DependentUpon>201809270317000_Lista de servicos no agendamento.cs</DependentUpon>
+    <Compile Include="Migrations\201809272205458_Inicial.cs" />
+    <Compile Include="Migrations\201809272205458_Inicial.Designer.cs">
+      <DependentUpon>201809272205458_Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelContext.cs" />
@@ -230,32 +198,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201809242108055_Inicial.resx">
-      <DependentUpon>201809242108055_Inicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809242112279_Outras Classes.resx">
-      <DependentUpon>201809242112279_Outras Classes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809242113078_ControleFin.resx">
-      <DependentUpon>201809242113078_ControleFin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809242113360_ControleFin1.resx">
-      <DependentUpon>201809242113360_ControleFin1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809242114186_horarios.resx">
-      <DependentUpon>201809242114186_horarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809242116291_Servicos.resx">
-      <DependentUpon>201809242116291_Servicos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809242118145_Campos Novos.resx">
-      <DependentUpon>201809242118145_Campos Novos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809270037425_Alteração da model agenda.resx">
-      <DependentUpon>201809270037425_Alteração da model agenda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809270317000_Lista de servicos no agendamento.resx">
-      <DependentUpon>201809270317000_Lista de servicos no agendamento.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809272205458_Inicial.resx">
+      <DependentUpon>201809272205458_Inicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

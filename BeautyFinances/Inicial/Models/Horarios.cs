@@ -14,11 +14,12 @@ namespace Inicial.Models
         public int IdServico { get; set; }
         public int tempo { get; set; }
 
-        public List<Servico> Servicos { get; set; }
+
+        public ICollection<Servico> Servicos { get; set; }
 
         public Horarios()
         {
-            Servicos = new List<Servico>();
+            Servicos = new HashSet<Servico>();
         }
     }
 }

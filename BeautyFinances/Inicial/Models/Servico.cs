@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inicial.Models
 {
@@ -10,5 +12,12 @@ namespace Inicial.Models
         public string descricao { get; set; }
         public double valorservico { get; set; }
 
+        public ICollection<Horarios> ListHorarios { get; set; }
+        public Servico()
+        {
+            ListHorarios = new HashSet<Horarios>();
+        }
+        //[ForeignKey("ID")]
+        //public virtual Horarios Horarios { get; set; }
     }
 }
